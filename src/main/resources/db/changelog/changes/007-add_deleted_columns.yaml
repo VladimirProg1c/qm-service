@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: vladimir
+      changes:
+        - addColumn:
+            tableName: user
+            columns:
+              - column:
+                  name: deleted
+                  type: boolean
+                  constraints:
+                    nullable: false

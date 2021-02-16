@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: sergei_k
+      changes:
+        - addColumn:
+            tableName: user
+            columns:
+              - column:
+                  name: creation_date
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_modification_date
+                  type: bigint
+              - column:
+                  name: last_login_date
+                  type: bigint
+  - changeSet:
+      id: 4
+      author: sergei_k
+      changes:
+        - addColumn:
+            tableName: quote
+            columns:
+              - column:
+                  name: creation_date
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_modification_date
+                  type: bigint

@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 7
+      author: sergei_k
+      changes:
+        - addColumn:
+            tableName: quote
+            columns:
+              - column:
+                  name: private
+                  type: boolean
+                  constraints:
+                    nullable: false
